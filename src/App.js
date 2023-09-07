@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
-import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import MovieList from "./components/MovieList";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [movies, setMovies] = useState([
@@ -24,8 +25,10 @@ function App() {
   ]);
 
   return (
-    <div>
-      <MovieList movies={movies} />
+    <div className='container-fluid movie-app'>
+      <div className='row'>
+        <MovieList movies={movies} />
+      </div>
     </div>
   );
 }
