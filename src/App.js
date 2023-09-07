@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import React, { useState } from "react";
-import MovieList from "./components/MovieList";
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import MovieList from "./components/MovieList";
 
 function App() {
   const [movies, setMovies] = useState([
