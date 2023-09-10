@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     const movieFavorites = JSON.parse(
-      localStorage.getItem("react-movie-app-favorites")
+      localStorage.getItem("react-movie-app-favorites") || "[]"
     );
 
     setFavorites(movieFavorites);
